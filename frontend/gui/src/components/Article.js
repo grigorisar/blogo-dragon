@@ -1,5 +1,5 @@
 import React from 'react';
-import { List, Avatar, Icon } from 'antd';
+import { List, Icon } from 'antd';
 
 
 
@@ -13,6 +13,7 @@ const IconText = ({ type, text }) => (
 const Articles = (props) => {
     return (
         <List
+            //set the layout to vertical
             itemLayout="vertical"
             size="large"
             pagination={{
@@ -21,25 +22,20 @@ const Articles = (props) => {
                 },
                 pageSize: 3,
             }}
+
             dataSource={props.data} //specify the data source 
+            // render each item 
             renderItem={item => (
                 <List.Item
                     key={item.title}
                     actions={[
+                        //random design icons
                         <IconText type="star-o" text="156" key="list-vertical-star-o" />,
                         <IconText type="like-o" text="156" key="list-vertical-like-o" />,
                         <IconText type="message" text="2" key="list-vertical-message" />,
-                    ]}
-                    extra={
-                        <img
-                            width={272}
-                            alt="logo"
-                            src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
-                        />
-                    }
+                    ]}                
                 >
-                    <List.Item.Meta
-                        avatar={<Avatar src={item.avatar} />}
+                    <List.Item.Meta //item titles are clickable
                         title={<a href={`/${item.id}`}>{item.title}</a>}
                         description={item.description}
                     />
