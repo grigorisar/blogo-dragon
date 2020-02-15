@@ -31,7 +31,11 @@ python -m manage.py runserver
 ```
 #### React Setup
 The react setup is very straight forward, make sure you have npm installed on your system.
-Navigate to ```/frontend/gui```and run```npm start```
+Navigate to ```/frontend/gui```and run
+```
+npm install
+npm start
+```
 
 ## Useful documentation and refrences
 
