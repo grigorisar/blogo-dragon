@@ -36,7 +36,7 @@ const Articles = (props) => {
                     ]}                
                 >
                     <List.Item.Meta //item titles are clickable
-                        title={<a href={`/${item.id}`}>{item.title}</a>}
+                        title={<a href={`articles/${item.id}`}>{item.title}</a>}
                         description={item.description}
                     />
                     {item.content}
