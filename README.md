@@ -1,8 +1,7 @@
 # Django-React-Example
 
 Example of a simple front end framework.
-Huge credits to the turorial of
-* [This Guy](https://www.youtube.com/watch?v=uZgRbnIsgrA&t=2s) - Part 1 of the tutorial.
+Huge credits to [This Guy](https://www.youtube.com/watch?v=uZgRbnIsgrA&t=2s) for the idea.
 
 ## Gettign Started
 
